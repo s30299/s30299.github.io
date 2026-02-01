@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Podłączenie Tailwind CSS przez CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+<!-- Treść strony będzie tutaj -->
+<!-- Nawigacja -->
+<nav class="sticky top-0 bg-white shadow-sm z-10">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <a href="#" class="text-xl font-bold text-indigo-600">
+
+            Mar<span class="text-gray-800">cewicz</span></a>
+        <div class="hidden md:flex space-x-6">
+            <a href="#funkcje" class="hover:text-indigo-600 transition-colors">Funkcje</a>
+            <a href="#cennik" class="hover:text-indigo-600 transition-colors">Cennik</a>
+            <a href="#darmo" class="hover:text-indigo-600 transition-colors px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700">Darmo!</a>
+        </div>
+        <!-- Przycisk mobilny zastępujący menu (bez JS) -->
+        <div class="md:hidden">
+            <a href="#menu" class="text-gray-800 hover:text-indigo-600">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!-- Sekcja Hero -->
+<header class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white">
+    <div class="container mx-auto px-4 py-20 md:py-32 flex flex-row items-center justify-between">
+        <div>
+            <div class="max-w-2xl">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Zarządzaj projektami</h1>
+                <p class="text-xl md:text-4xl opacity-80 mb-8 font-bold" >łatwiej niż kiedykolwiek</p>
+                <p class="text-md md:text-sm  mb-8 text-gray-100"> just text, ale mały</p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#darmo" class="bg-white text-indigo-600 hover:bg-indigo-50 px-6 py-3 rounded-lg font-medium transition-colors">Rozpocznij za darmo</a>
+                    <a href="#darmo" class="bg-transparent border-2 border-white hover:bg-white hover:text-indigo-600 px-6 py-3 rounded-lg font-medium transition-colors">Demo produktu</a>
+                </div>
+            </div>
+        </div>
+        <div >
+            <div class="transform rotate-3 w-64 h-64 bg-white rounded-2xl shadow-lg flex items-center justify-center text-indigo-600 font-bold text-2xl"> Marcewicz</div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<!-- Sekcja funkcje -->
+<section id="funkcje" class="py-16 md:py-24 bg-gray-100">
+    <div class="container mx-auto px-4">
+        <h6 class="text-center font-bold text-indigo-600"> Funkcje</h6>
+        <h2 class="text-3xl font-bold mb-12 text-center">Wszystko, czego potrzebujesz do zarządzania projektami</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+            <!-- Karta umiejętności 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow hover:scale-105 transition">
+                <div class="w-12 h-12 bg-indigo-700 text-indigo-100 rounded-lg flex items-center justify-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z" />
+                    </svg>
+                </div>
+                <h3 class="font-bold mb-2">Zarządzanie zadaniami</h3>
+                <p class="text-gray-600 opacity-80">Długi tekst.Długi tekst.Długi tekst.Długi tekst.Długi tekst.</p>
+            </div>
+            <!-- Karta umiejętności 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow hover:scale-105 transition">
+                <div class="w-12 h-12 bg-green-500 text-indigo-100 rounded-lg flex items-center justify-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z" />
+                    </svg>
+                </div>
+                <h3 class="font-bold mb-2">Współpraca zespołowa</h3>
+                <p class="text-gray-600 opacity-80">Długi tekst.Długi tekst.Długi tekst.Długi tekst.Długi tekst.</p>
+            </div>
+            <!-- Karta umiejętności 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow hover:scale-105 transition">
+                <div class="w-12 h-12 bg-purple-600 text-indigo-100 rounded-lg flex items-center justify-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z" />
+                    </svg>
+                </div>
+                <h3 class="font-bold mb-2">Śledzenie postępów</h3>
+                <p class="text-gray-600 opacity-80">Długi tekst.Długi tekst.Długi tekst.Długi tekst.Długi tekst.Długi tekst.</p>
+            </div>
+
+            <!-- Pozostałe karty umiejętności... -->
+        </div>
+    </div>
+</section>
+
+<!-- Sekcja Cennik -->
+<section id="cennik" class="py-16 md:py-24">
+    <div class="container mx-auto px-4">
+        <h6 class="text-center font-bold text-indigo-600"> Cennik</h6>
+        <h2 class="text-3xl font-bold mb-12 text-center">Plany dopasowane do twoich potrzeb</h2>
+        <div class="grid md:grid-cols-3 lg:grid-cols-3 gap-8">
+            <!-- Projekt 1 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow p-6 border-2 border-gray-800 transform -translate-y-5">
+                <div class="p-6">
+                    <h2 class="font-bold text-xl mb-2 text-center"> Basic</h2>
+                    <p class="mt-2 text-gray-600 bg-green-100 rounded-lg text-center">Dla małych zespółów</p>
+                    <p class="text-2xl font-bold mt-4">$49/miesiąc</p>
+                    <p class="text-gray-600 mb-4 flex items-center justify-left">
+                        <svg class="w-6 h-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 9l3 3L15 5" />
+                        </svg>
+                        Same plusy.</p>
+                    <p class="text-gray-600 mb-4 flex items-center justify-left">
+                        <svg class="w-6 h-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 9l3 3L15 5" />
+                        </svg>
+                        Same plusy.</p>
+
+                    <button class="text-indigo-600 hover:text-indigo-800 font-medium border-2 rounded-lg border-blue-500">Rozpocznij za darmo </button>
+                </div>
+            </div>
+            <!-- Projekt 2 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow border-2 border-yellow-200 transform -translate-y-10">
+                <div class="h-12 bg-gradient-to-r from-blue-500 to-teal-400 text-center font-bold text-indigo-100">Polecamy dla Ciebie!</div>
+                <div class="p-6">
+                    <h2 class="font-bold text-xl mb-2 text-center"> Pro</h2>
+                    <p class="text-2xl font-bold mt-5">$99/miesiąc</p>
+                    <p class="text-gray-600 mb-4 flex items-center justify-left">
+                        <svg class="w-6 h-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 9l3 3L15 5" />
+                        </svg>
+                        Same plusy.</p>
+                    <p class="text-gray-600 mb-4 flex items-center justify-left">
+                        <svg class="w-6 h-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 9l3 3L15 5" />
+                        </svg>
+                        Same plusy.</p>
+
+                    <button class="text-indigo-100 hover:text-indigo-800 font-medium border-2 rounded-lg border-blue-500 bg-blue-500">Rozpocznij za darmo </button>
+                </div>
+            </div>
+            <!-- Projekt 3 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow p-6 border-2 border-amber-700 transform ">
+                <div class="p-6">
+                    <h2 class="font-bold text-xl mb-2 text-center"> Enterprise</h2>
+                    <p class="text-2xl font-bold mt-5">$249/miesiąc</p>
+                    <p class="text-gray-600 mb-4 flex items-center justify-left">
+                        <svg class="w-6 h-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 9l3 3L15 5" />
+                        </svg>
+                        Same plusy.</p>
+                    <p class="text-gray-600 mb-4 flex items-center justify-left">
+                        <svg class="w-6 h-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 9l3 3L15 5" />
+                        </svg>
+                        Same plusy.</p>
+
+                    <button class="text-indigo-600 hover:text-indigo-800 font-medium border-2 rounded-lg border-blue-500">Kontakt z działem sprzedaży </button>
+                </div>
+            </div>
+
+            <!-- Pozostałe projekty... -->
+        </div>
+    </div>
+</section>
+
+<section id="darmo" class="bg-gray-100 text-white text-center py-20">
+    <h2 class="text-3xl font-bold">Gotowy na CV?</h2>
+    <p class="mt-4 text-lg">Dołącz do tysięcy zespołów, które usprawniły swoją pracę dzięki ^.</p>
+    <button class="mt-6 px-6 py-3 bg-white text-indigo-600 rounded-lg hover:scale-125 transition">Rozpocznij oglądanie za darmo</button>
+</section>
+<section id="footer" class="bg-gray-800 text-white text-center">
+        <p class="text-sm text-gray-400">&copy; 2026 Oliwier Marcewicz. Wszelkie prawa zastrzeżone.</p>
+</section>
+</body>
+
+</html>
